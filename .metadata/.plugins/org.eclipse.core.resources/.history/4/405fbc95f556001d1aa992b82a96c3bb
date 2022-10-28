@@ -1,0 +1,32 @@
+package modelo;
+
+import java.util.ArrayList;
+
+public class Cartelas {
+	
+	private int numeroSerie;
+	private int numerosCartela;
+	
+	public Cartelas(int numeroSerie, int numerosCartela) {
+		super();
+		this.numeroSerie = numeroSerie;
+		this.numerosCartela = numerosCartela;
+	}
+	public int getNumeroSerie() {
+		return numeroSerie;
+	}
+	public void setNumeroSerie(int numeroSerie) {
+		this.numeroSerie = numeroSerie;
+	}
+	public int getNumerosCartela() {
+		return numerosCartela;
+	}
+	public void setNumerosCartela(int numerosCartela) {
+		this.numerosCartela = numerosCartela;
+	}
+	
+	
+	
+	
+
+}

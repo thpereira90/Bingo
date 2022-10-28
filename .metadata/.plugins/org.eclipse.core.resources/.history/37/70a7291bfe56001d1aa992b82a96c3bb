@@ -1,0 +1,23 @@
+package modelo;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Teste{
+
+	public static void main(String[] args) {
+		
+		List<Cartelas> teste  = new ArrayList<Cartelas>();
+		
+		Cartelas a1 = new Cartelas();
+		
+		Apostador a = new Apostador();
+		
+		for (int i = 0; i <= 20; i++) {
+			teste.add(new Cartelas(i));
+		}
+		
+		System.out.println(a1.getLista());
+	}
+
+}

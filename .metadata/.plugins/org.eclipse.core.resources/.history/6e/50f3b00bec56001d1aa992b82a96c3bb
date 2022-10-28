@@ -1,0 +1,27 @@
+package modelo;
+
+public class Apostador {
+	
+	private String nomeCartela;
+	public Apostador(int numeros, String nomeApostador) {
+
+		this.numeros = numeros;
+		this.nomeApostador = nomeApostador;
+	}
+	private int numeros;
+	private String nomeApostador;
+	
+	public int getNumeros() {
+		return numeros;
+	}
+	public void setNumeros(int numeros) {
+		this.numeros = numeros;
+	}
+	public String getNomeApostador() {
+		return nomeApostador;
+	}
+	public void setNomeApostador(String nomeApostador) {
+		this.nomeApostador = nomeApostador;
+	}
+	
+}

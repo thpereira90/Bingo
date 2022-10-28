@@ -1,0 +1,20 @@
+package modelo;
+
+public class Teste{
+
+	public static void main(String[] args) {
+		
+		Apostador a = new Apostador();
+		
+		Cartelas cartelaA = new Cartelas();
+		
+		a.setNomeApostador("Mayara");
+		
+		cartelaA.setNumerosCartela(int[2,5,15,17,20]);
+		
+		
+		System.out.println(a.getNomeApostador());
+
+	}
+
+}

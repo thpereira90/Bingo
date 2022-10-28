@@ -1,0 +1,18 @@
+package modelo;
+
+public class Teste{
+
+	public static void main(String[] args) {
+		
+		Apostador a = new Apostador();
+		
+		Cartela a1 = new Cartela();
+		
+		a.setNomeApostador("Mayara");
+		
+		
+		System.out.println(a.getNomeApostador());
+
+	}
+
+}

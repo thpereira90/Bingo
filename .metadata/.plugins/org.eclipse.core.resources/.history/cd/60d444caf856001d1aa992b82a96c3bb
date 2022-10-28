@@ -1,0 +1,17 @@
+package modelo;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Cartelas {
+	
+	private int numeroSerie;
+	private int numerosCartela[] = {1,5,15,18,20};
+	public int[] getNumerosCartela() {
+		return numerosCartela;
+	}
+	public void setNumerosCartela(int[] numerosCartela) {
+		this.numerosCartela = numerosCartela;
+	}
+
+}

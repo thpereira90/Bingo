@@ -1,0 +1,13 @@
+package modelo;
+
+public class Apostador {
+	
+	private String nomeApostador;
+	
+	public String getNomeApostador() {
+		return nomeApostador;
+	}
+	public void setNomeApostador(String nomeApostador) {
+		this.nomeApostador = nomeApostador;
+	}
+}
