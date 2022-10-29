@@ -2,7 +2,6 @@ package modelo;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -14,7 +13,7 @@ public class Teste{
 		
 		List<Cartelas> teste  = new ArrayList<Cartelas>();
 		
-		Map<Apostador, List<Object>> jogador = new HashMap<Apostador, List<Object>>();
+		Map<Apostador, List<Object>> jogador = (Map<Apostador, List<Object>>) new ArrayList();
 		
 		
 		//Cartelas a1 = new Cartelas();
@@ -39,7 +38,7 @@ public class Teste{
 		
 		System.out.println(a);
 		
-		System.out.println(jogador);
+		System.out.println(jogador.values());
 	}
 
 }

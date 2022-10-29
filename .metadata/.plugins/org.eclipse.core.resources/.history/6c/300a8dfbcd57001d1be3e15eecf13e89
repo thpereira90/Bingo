@@ -14,7 +14,7 @@ public class Teste{
 		
 		List<Cartelas> teste  = new ArrayList<Cartelas>();
 		
-		Map<Apostador, List<Object>> jogador = new HashMap<Apostador, List<Object>>();
+		Map<Apostador, Cartelas> jogador = new HashMap<Apostador, Cartelas>();
 		
 		
 		//Cartelas a1 = new Cartelas();
@@ -31,7 +31,7 @@ public class Teste{
 		
 		List<Object> list2 = teste.stream().limit(5).collect(Collectors.toList());
 		
-		jogador.put(a, list2);
+		jogador.put(a, (Cartelas) list2);
 
 		System.out.println(teste);
 		

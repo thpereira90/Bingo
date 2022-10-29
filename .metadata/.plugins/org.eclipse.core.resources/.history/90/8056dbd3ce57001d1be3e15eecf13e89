@@ -14,7 +14,7 @@ public class Teste{
 		
 		List<Cartelas> teste  = new ArrayList<Cartelas>();
 		
-		Map<Apostador, List<Object>> jogador = new HashMap<Apostador, List<Object>>();
+		Map<Apostador, List<Cartelas>> jogador = new HashMap<Apostador, List<Cartelas>>();
 		
 		
 		//Cartelas a1 = new Cartelas();
@@ -29,13 +29,11 @@ public class Teste{
 			Collections.shuffle(teste);
 		}
 		
-		List<Object> list2 = teste.stream().limit(5).collect(Collectors.toList());
+		teste.stream().limit(5).collect(Collectors.toList());
 		
-		jogador.put(a, list2);
+		jogador.put(a, teste);
 
 		System.out.println(teste);
-		
-		System.out.println(list2);
 		
 		System.out.println(a);
 		

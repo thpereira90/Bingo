@@ -2,7 +2,6 @@ package modelo;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -14,7 +13,7 @@ public class Teste{
 		
 		List<Cartelas> teste  = new ArrayList<Cartelas>();
 		
-		Map<Apostador, List<Object>> jogador = new HashMap<Apostador, List<Object>>();
+		Map<Apostador, Cartelas> jogador;
 		
 		
 		//Cartelas a1 = new Cartelas();
@@ -29,17 +28,15 @@ public class Teste{
 			Collections.shuffle(teste);
 		}
 		
-		List<Object> list2 = teste.stream().limit(5).collect(Collectors.toList());
+		Cartelas list2 = (Cartelas) teste.stream().limit(5).collect(Collectors.toList());
 		
-		jogador.put(a, list2);
+//		jogador.put(a, list2);
 
 		System.out.println(teste);
 		
 		System.out.println(list2);
 		
 		System.out.println(a);
-		
-		System.out.println(jogador);
 	}
 
 }
