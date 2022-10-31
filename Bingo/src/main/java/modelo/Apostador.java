@@ -10,4 +10,10 @@ public class Apostador {
 	public void setNomeApostador(String nomeApostador) {
 		this.nomeApostador = nomeApostador;
 	}
+	@Override
+	public String toString() {
+		return getNomeApostador();
+	}
+	
+	
 }
